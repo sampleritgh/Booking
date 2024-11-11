@@ -1,38 +1,88 @@
-.App {
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.main-content,
+.details-form {
+  padding: 20px;
+  background-color: #f7f7f7;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-content h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.booking-form,
+.booking-info {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.room-selection {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.price-display {
+  font-size: 18px;
+  color: #007bff;
+  margin-top: 15px;
+}
+
+.book-button,
+.confirm-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.book-button:hover,
+.confirm-button:hover {
+  background-color: #0056b3;
 }
